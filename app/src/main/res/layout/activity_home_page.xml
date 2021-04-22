@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE9A5"
+    tools:context=".HomePage">
+
+    <ImageButton
+        android:id="@+id/btn_Game1"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/txt_elderly"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/rounded_corners_app"
+        android:scaleType="fitCenter"
+        android:src="@drawable/flappygame"
+        android:visibility="invisible"/>
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/txt_Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:texts="@array/movingText"
+        app:timeout="2000"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/txt_elderly"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="right"
+        android:text="Elderly"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_PWS"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_elderly"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.08"
+        android:text="PWS"
+        android:textColor="#DA6B6B"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/txt_elderly"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.08"
+        android:text="."
+        android:textColor="#DA6B6B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_subtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txt_elderly"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/athiti_light"
+        android:gravity="center"
+        android:letterSpacing="-0.04"
+        android:text="Connecting elderlies, creating memories"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_lastlaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignTop="@id/txt_subtag"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/elderly"/>
+
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:background="#DA6B6B"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>

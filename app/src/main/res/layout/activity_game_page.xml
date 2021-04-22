@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePageActivity"
+    android:background="#FFE9A5">
+
+    <TextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Select Game"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/btn_Game1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/txt_select"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corners_app"
+        android:src="@drawable/flappygame"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/txt_select"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rounded_corners_app" />
+
+    <ImageView
+        android:id="@+id/pic_Game2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/txt_select"
+        android:layout_marginTop="125dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="78dp"
+        android:src="@drawable/cards"
+        android:alpha="0.4" />
+
+    <ImageView
+        android:id="@+id/over_game2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/txt_select"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corners_app_2" />
+
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/btn_Game1"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/rounded_corners_app" />
+
+    <ImageView
+        android:id="@+id/pic_Game3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/btn_Game1"
+        android:layout_marginTop="202dp"
+        android:layout_marginLeft="77dp"
+        android:src="@drawable/cup"
+        android:alpha="0.4" />
+
+    <ImageView
+        android:id="@+id/over_game3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/btn_Game1"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corners_app_2" />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rounded_corners_app" />
+
+    <ImageView
+        android:id="@+id/pic_Game4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/over_game2"
+        android:layout_marginTop="205dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="78dp"
+        android:src="@drawable/flappygame"
+        android:alpha="0.4" />
+
+    <ImageView
+        android:id="@+id/over_game4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="50dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corners_app_2" />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game3"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/rounded_corners_app" />
+
+    <ImageView
+        android:id="@+id/pic_Game5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/over_game3"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="75dp"
+        android:src="@drawable/cards"
+        android:alpha="0.4" />
+
+    <ImageView
+        android:id="@+id/over_game5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game3"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corners_app_2" />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rounded_corners_app" />
+
+    <ImageView
+        android:id="@+id/pic_Game6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/over_game4"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="73dp"
+        android:src="@drawable/cup"
+        android:alpha="0.4" />
+
+    <ImageView
+        android:id="@+id/over_game6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/over_game4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="50dp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corners_app_2" />
+
+</RelativeLayout>

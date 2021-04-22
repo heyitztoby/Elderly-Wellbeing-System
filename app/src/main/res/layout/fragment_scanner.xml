@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.ScannerFragment">
+
+    <!-- Filters  -->
+
+
+    <!-- MultiConnect -->
+
+    <!-- Scanned devices -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:id="@+id/filteredPeripheralsCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/bars_unselected"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                app:texts="@array/movingText2"
+                app:timeout="1500"
+                />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/peripheralsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

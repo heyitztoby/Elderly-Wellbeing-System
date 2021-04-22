@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.elderly.physical.wellbeing.system.app.ControllerActivity">
+
+    <item
+        android:id="@+id/action_boardSelector"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/colorpicker_boardselector_action"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/action_boardComponentsSelector"
+        android:icon="@drawable/ic_pie_chart_outlined_white_24dp"
+        android:title="@string/colorpicker_boardtype_action"
+        app:showAsAction="always" />
+
+</menu>
